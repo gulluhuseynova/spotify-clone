@@ -15,11 +15,14 @@
                         <v-row dense no-gutters>
                             <v-col id="singer-style" @click="true">Ariana Grande</v-col>
                         </v-row>
+                        <v-row dense no-gutters>
+                            <v-col id="singer-style" @click="true">Ariana Grande</v-col>
+                        </v-row>
                     </v-col>
                     <v-col cols="auto" align-self="center" id="heart-icon">
-                        <v-icon small color="rgba(245, 245, 245, 0.658)" @click="heartToggle"
-                         :style="{color: heartToggle, 'red' : 
-                        'white'}">mdi-cards-heart-outline</v-icon>
+                        <v-icon small color="rgba(245, 245, 245, 0.658)" @click="heartToggle" :style="{ color: heartToggle, red: 'white' }"
+                            >mdi-cards-heart-outline</v-icon
+                        >
                     </v-col>
                 </v-row>
             </v-col>
@@ -90,7 +93,7 @@ export default {
     methods: {
         heartToggle() {
             this.heart = !this.heart;
-            console.log(this.heart)
+            console.log(this.heart);
         },
         zoomOut() {
             this.zoom = this.zoom - 10 || 0;
